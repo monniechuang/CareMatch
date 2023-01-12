@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/h_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/h_ava"
+                android:layout_width="45dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="可預約"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/h_name"
+                android:layout_width="45dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="看護"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <!---->
+            <!--<TextView-->
+                <!--android:layout_width="5dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="0dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:text="/"-->
+                <!--android:textSize="12sp" />-->
+
+            <TextView
+                android:id="@+id/h_age"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="34"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="歲"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="   "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/h_city"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="台北"
+                android:textSize="12sp" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="時間："
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/h_time"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="早班"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="看護費："
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/h_price"
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="300"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text="/hr"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:layout_marginTop="5dp"
+                android:textSize="8sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="經驗："
+            android:textSize="12sp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/h_exp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="看護經驗"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/fav_button"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            app:srcCompat="@drawable/empty_heart" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/h_exp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Human Exp"-->
+            <!--android:textSize="12sp" />-->
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

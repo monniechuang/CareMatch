@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/positioning"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/rest_name"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="商店名稱"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                    android:id="@+id/rest_image"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/store" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="電話"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorblack"/>
+
+                <TextView
+                    android:id="@+id/rest_tele"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="telephone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="地點"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorblack"/>
+
+                <TextView
+                    android:id="@+id/rest_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="address" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="營業時間"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorblack"/>
+
+                <TextView
+                    android:id="@+id/rest_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="介紹"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorblack"/>
+
+            <TextView
+                android:id="@+id/rest_details"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="description" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/products_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

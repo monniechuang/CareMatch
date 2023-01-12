@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/human_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="70dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/whitepic"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/care_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/ok"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/member"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_ava"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="可預約"
+                android:layout_toRightOf="@+id/ok"
+                android:layout_toEndOf="@+id/ok"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/ok"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/care"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/sex"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/care_name"
+                android:layout_toRightOf="@+id/care"
+                android:layout_toEndOf="@+id/care"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/care"/>
+
+            <TextView
+                android:id="@+id/human_sex"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/care_sex"
+                android:layout_toRightOf="@+id/human_name"
+                android:layout_toEndOf="@+id/human_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/human_name"/>
+
+            <TextView
+                android:id="@+id/human_age"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/care_age"
+                android:layout_toRightOf="@+id/human_sex"
+                android:layout_toEndOf="@+id/human_sex"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/human_name"/>
+
+            <TextView
+                android:id="@+id/age"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/age"
+                android:layout_toRightOf="@+id/human_age"
+                android:layout_toEndOf="@+id/human_age"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/human_name"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_below="@+id/relativeLayout0"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/edu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/educate"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_educate"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="教育程度"
+                android:layout_toRightOf="@+id/edu"
+                android:layout_toEndOf="@+id/edu"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/edu"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_below="@+id/relativeLayout0.5"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/place"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/booking_place"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_city"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="所在地點"
+                android:layout_toRightOf="@+id/place"
+                android:layout_toEndOf="@+id/place"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/place"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/booking_starttime"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_time"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="早/晚班"
+                android:layout_toRightOf="@+id/time"
+                android:layout_toEndOf="@+id/time"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/time"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/price"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/salary"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_price"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="價格"
+                android:layout_toRightOf="@+id/price"
+                android:layout_toEndOf="@+id/price"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/price"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/human_image"
+            android:layout_toEndOf="@+id/human_image"
+            android:layout_below="@+id/relativeLayout2.5"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/exp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:src="@drawable/happysearch"
+                android:tint="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/human_exp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/care_exp"
+                android:layout_toRightOf="@+id/exp"
+                android:layout_toEndOf="@+id/exp"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/exp"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/book_care"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我要預約"
+                android:background="@drawable/white_border"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我要寫評論"
+                android:background="@drawable/white_border" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout5"
+            android:layout_marginTop="10dp">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/review_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/human_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_gravity="center">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/human_image"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_marginTop="25dp"-->
+                    <!--android:layout_marginBottom="25dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--app:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/human_name"-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="30dp"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text=""-->
+                            <!--android:textSize="20dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/human_age"-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="15dp"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginLeft="0dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:text=""-->
+                            <!--android:textSize="12sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="15dp"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginRight="0dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:text="歲 "-->
+                            <!--android:textSize="12sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/human_sex"-->
+                            <!--android:layout_width="20dp"-->
+                            <!--android:layout_height="15dp"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginLeft="0dp"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:text=""-->
+                            <!--android:textSize="12sp" />-->
+                    <!--</LinearLayout>-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/human_ava"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="可預約" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/human_time"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="早班" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="所在城市"-->
+                        <!--android:textColor="@color/colorblack"-->
+                        <!--android:textSize="15dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/human_city"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="Tainan" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="最高學歷"-->
+                        <!--android:textColor="@color/colorblack"-->
+                        <!--android:textSize="15dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/human_educate"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="大學" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="看護費用(以12小時為單位)"-->
+                        <!--android:textColor="@color/colorblack"-->
+                        <!--android:textSize="15dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/human_price"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:text="1000" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="過去的經驗"-->
+                        <!--android:textColor="@color/colorblack"-->
+                        <!--android:textSize="15dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/human_exp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:text="" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+
+
+
+</RelativeLayout>

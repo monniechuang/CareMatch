@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:id="@+id/frahome"
+    >
+
+
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imageButton_booking"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/booking_2" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="看護預約"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="vertical"
+            >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50" >
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageButton_medical"
+                android:layout_width="205dp"
+                android:layout_height="260dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_medical" />
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageButton_read"
+                android:layout_width="205dp"
+                android:layout_height="300dp"
+                android:layout_toRightOf="@+id/imageButton_medical"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a02" />
+
+
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView_medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="25dp"
+            android:text="醫療用具整合"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_medical"
+            android:layout_marginLeft="260dp"
+            android:text="樂活悅讀"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imageButton_post"
+            android:layout_width="210dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="380dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a04" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="40dp"
+            android:text="細心討論區"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/imageButton_trans"
+            android:layout_width="230dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginBottom="0dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a05" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_discuss"
+            android:layout_marginLeft="235dp"
+            android:text="交通服務預約"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/fragmentTransportation"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/car_1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="352dp"
+                        android:layout_height="82dp"
+                        android:layout_marginTop="15dp"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logo_blueword"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:text="交通預約"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="sans-serif-medium"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_below="@+id/linearlayout1"
+                    android:rotation="45"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/square"
+                    android:layout_centerHorizontal="true"/>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageview1"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_place"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:src="@drawable/trans"
+                        android:tint="@color/white"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="復康巴士"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_date"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:src="@drawable/booking_date"
+                        android:tint="@color/white"
+                        />
+
+                    <TextView
+                        android:id="@+id/booking_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:text="請選擇您與家人要預約的日期"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageview_start_time"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:src="@drawable/booking_starttime"
+                        android:tint="@color/white"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/choose_time"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="請選擇您與家人要預約的時間"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:src="@drawable/booking_place"
+                        android:tint="@color/white"
+                        />
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/booking_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="35dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:hint="請輸入您與家人要預約的乘車起點"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/gray" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:src="@drawable/booking_place"
+                        android:tint="@color/white"
+                        />
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/booking_place2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="35dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:hint="請輸入您與家人要預約的乘車目的"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/gray" />
+                </RelativeLayout>
+
+
+
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/relativeLayout4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/relativeLayout3"-->
+                <!--android:layout_marginTop="20dp">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imageview_end_time"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:padding="8dp"-->
+                <!--android:src="@drawable/booking_endtime"-->
+                <!--android:tint="@color/white"-->
+                <!--/>-->
+
+                <!--&lt;!&ndash;<Spinner&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/spinner_end_time"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_toRightOf="@+id/imageview_end_time"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="22sp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignBottom="@+id/imageview_end_time"/>&ndash;&gt;-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/end_time"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="請選擇您與家人要預約的結束時間"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@+id/imageview_end_time"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignBottom="@+id/imageview_end_time"/>-->
+
+
+                <!--</RelativeLayout>-->
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                    <Button
+                        android:id="@+id/Button_search"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/edit_text_style"
+                        android:text="預約"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/Button_cancel"
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edit_text_style"
+                        android:text="取消"
+                        android:textColor="@color/black" />
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".BookingActivity">-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_marginBottom="15dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--app:cardCornerRadius="10dp"-->
+    <!--app:cardElevation="3dp"-->
+    <!--app:cardPreventCornerOverlap="false"-->
+    <!--app:cardUseCompatPadding="true"-->
+    <!--&gt;-->
+
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linearlayout1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="352dp"-->
+    <!--android:layout_height="82dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/logo_blueword"-->
+    <!--android:tint="@color/white" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="22sp"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:text="看護預約"-->
+    <!--android:layout_marginBottom="15dp"-->
+    <!--android:fontFamily="sans-serif-medium"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview1"-->
+    <!--android:layout_below="@+id/linearlayout1"-->
+    <!--android:rotation="45"-->
+    <!--android:layout_marginTop="-10dp"-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:src="@drawable/square"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/imageview1"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview_date"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="8dp"-->
+    <!--android:src="@drawable/booking_date"-->
+    <!--android:tint="@color/white"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/booking_date"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:text="請選擇您與家人要預約的日期"-->
+    <!--android:textSize="18sp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/imageview_date"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignBottom="@+id/imageview_date"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/relativeLayout1"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview_start_time"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="8dp"-->
+    <!--android:src="@drawable/booking_starttime"-->
+    <!--android:tint="@color/white"-->
+    <!--/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinner_start_time"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_toRightOf="@+id/imageview_start_time"-->
+    <!--android:textSize="22sp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignBottom="@+id/imageview_start_time"/>-->
+    <!--/>-->
+
+
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/booking_start_time"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="15sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toRightOf="@+id/imageview_start_time"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignBottom="@+id/imageview_start_time"/>&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/relativeLayout2"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview_end_time"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="8dp"-->
+    <!--android:src="@drawable/booking_endtime"-->
+    <!--android:tint="@color/white"-->
+    <!--/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinner_end_time"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_toRightOf="@+id/imageview_end_time"-->
+    <!--android:textSize="22sp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignBottom="@+id/imageview_end_time"/>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/relativeLayout3"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview_place"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="8dp"-->
+    <!--android:src="@drawable/booking_place"-->
+    <!--android:tint="@color/white"-->
+    <!--/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinner_place"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_toRightOf="@+id/imageview_place"-->
+    <!--android:textSize="22sp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignBottom="@+id/imageview_place"/>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relativeLayout5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/relativeLayout4"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageview_category"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:padding="8dp"-->
+    <!--android:src="@drawable/booking_category"-->
+    <!--android:tint="@color/white"-->
+    <!--/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinner_category"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_toRightOf="@+id/imageview_category"-->
+    <!--android:textSize="22sp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignBottom="@+id/imageview_category"/>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/relativeLayout5"-->
+
+    <!--&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/Button_search"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/button_style"-->
+    <!--android:text="搜尋"-->
+    <!--android:textColor="@color/white" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/Button_match"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/button_style"-->
+    <!--android:text="精準配對"-->
+    <!--android:textColor="@color/white" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+    <!--</ScrollView>-->

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/fragmentTransportation"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_marginTop="32dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/mybook_mybook"-->
+                <!--android:text="交通預約"-->
+                <!--android:textSize="30sp"-->
+                <!--android:textColor="@color/startblue"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:layout_below="@+id/mybook_mybook"-->
+                <!--android:text="5個預約"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:src="@drawable/logo_blueword"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="70dp" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            >
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/trans_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="360dp"
+                        android:layout_height="120dp"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/trans1" />
+
+
+
+
+                </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearlayout1"
+                        android:layout_margin="20dp">
+
+                        <TextView
+                            android:id="@+id/one"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:text="臺北市政府為落實社會福利政策、照顧身心障礙市民，自78年7月起成立小型復康巴士，提供點對點預約運輸服務，秉公平、公正及公開原則接受民眾預約申請用車，屬戶到戶及門運輸，並將服務對象依障別等級區分為特A等級、A1等級、A2等級、B等級障別及非臺北市民，其服務方式說明如下, 另詳細服務規定請參閱附檔「臺北市身心障礙者小型冷氣車乘客服務須知」："
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout1"
+                        android:layout_margin="20dp">
+
+                        <TextView
+                            android:id="@+id/twp"
+                            android:gravity="left"
+                            android:textColor="@color/gray"
+                            android:text=" 一、服務區域：\n臺北市聯營公車服務區域，起點或迄點必須位於臺北市內。\n二、服務費用：\n一般費率：比照臺北市之計程車費率之3分之1計算。\n共乘費率：共乘趟次全程皆屬共乘優惠里程，以66%優惠計之。\n其他：過路費由乘客自付，乘客可於下車時向駕駛員索取收據。\n三、服務時間：\n一般服務時段：每日上午6時起發頭班車（抵達乘客預定地點）至晚上11時為末班車（抵達乘客預定地點）。\n延長服務時段：晚上11時至翌日6時增闢2輛車（乘車費用採一般費率計）。\n註：服務班次起點位於臺北市境外之服務時間為每日上午10時以後(非臺北市民服務班次起點須位於臺北市境內)"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="135dp"
+                    android:layout_marginTop="45dp"
+                    android:gravity="right"
+                    android:text="復康巴士"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout2"
+
+                        >
+
+                        <Button
+                            android:id="@+id/Button_search"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/edit_text_style"
+                            android:text="進入預約"
+                            android:textColor="@color/black" />
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </GridLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
+
+

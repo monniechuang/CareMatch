@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/products_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/products_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:text="產品名稱"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/products_storename"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="產品商店"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <!--<com.like.LikeButton-->
+            <!--android:id="@+id/fav_button"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--app:anim_scale_factor="2"-->
+            <!--app:circle_end_color="@color/colorAccent"-->
+            <!--app:circle_start_color="@color/colorPrimary"-->
+            <!--app:dots_primary_color="@color/colorAccent"-->
+            <!--app:dots_secondary_color="@color/colorPrimary"-->
+            <!--app:icon_size="18dp"-->
+            <!--app:icon_type="heart"/>-->
+            <!--<Button-->
+            <!--android:id="@+id/fav_button"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:text="收藏產品"-->
+            <!--android:background="@drawable/blue_bg"-->
+            <!--android:textColor="@color/light_white"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:layout_margin="5dp"/>-->
+            <ImageView
+                android:id="@+id/fav_button"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/empty_heart" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="距離"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="km"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">CareMatch</string>
+    <string name="facebook_app_id">2122616574427181</string>
+    <string name="facebook_login_protocol_scheme">fb2122616574427181</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="FACEBOOK_APP_ID">436968163708938</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">5a2fa3b64b77171c5e7ab8fec42b30fb</string>
+
+    <!-- Firestore Strings -->
+    <string name="collection_users">Users</string>
+    <string name="collection_chatrooms">Chatrooms</string>
+    <string name="collection_chat_messages">Chat Messages</string>
+    <string name="collection_chatroom_user_list">User List</string>
+    <string name="collection_user_locations">User Locations</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="resend_verification_email">Resend Verification Email</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register">註冊</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="tabian_consulting_logo">Tabian Consulting Logo</string>
+    <string name="email_registration">Email Registration</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="google_maps_API_key">AIzaSyDfaIb8bv3zIwMQEPJJ1AQkGpmv7o18eMg</string>
+
+
+    <string name="action_profile">Profile</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="error">請輸入完整</string>
+    <string name="shortpass">請輸入最少六個文字</string>
+    <string name="verify">請先認證您的信箱</string>
+    <string name="checkEmail">認證信已寄至您的信箱</string>
+    <string name="login">登入</string>
+
+    <string name="delete">"刪除","取消"</string>
+
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">小於</string>
+    <string name="date_util_term_a">一</string>
+    <string name="date_util_term_an">一</string>
+
+    <string name="date_util_unit_second">秒</string>
+    <string name="date_util_unit_seconds">秒</string>
+    <string name="date_util_unit_minute">分鐘</string>
+    <string name="date_util_unit_minutes">分鐘</string>
+    <string name="date_util_unit_hour">小時</string>
+    <string name="date_util_unit_hours">小時</string>
+    <string name="date_util_unit_day">天</string>
+    <string name="date_util_unit_days">天</string>
+    <string name="date_util_unit_month">月</string>
+    <string name="date_util_unit_months">月</string>
+    <string name="date_util_unit_year">年</string>
+    <string name="date_util_unit_years">年</string>
+
+    <string name="date_util_prefix_lt">小於</string>
+    <string name="date_util_prefix_about">約</string>
+    <string name="date_util_prefix_over">超過</string>
+    <string name="date_util_prefix_almost">大約</string>
+
+    <string name="date_util_suffix">前</string>
+
+    <string name="update">更新</string>
+    <string name="select_date">請選擇您與家人要預約的日期</string>
+    <string name="comfirm_date">請確認要預約的日期</string>
+
+
+    <string name="care_exp">看護經驗</string>
+    <string name="care_time">預約時段</string>
+    <string name="care_date">預約日期</string>
+    <string name="age">歲 </string>
+    <string name="care_age">30</string>
+    <string name="care_hour">/小時</string>
+    <string name="care_sex">男</string>
+    <string name="care_name">看護</string>
+    <string name="care_price">看護費用</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

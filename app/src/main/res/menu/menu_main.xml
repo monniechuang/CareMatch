@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <item
+        android:id="@+id/action_maps"
+        android:title="查看店家"
+        app:showAsAction="always"
+        android:icon="@drawable/map"
+
+
+        />
+    <item
+        android:id="@+id/action_opencv"
+        android:title="智慧居家"
+        app:showAsAction="never"
+        android:icon="@drawable/opencv"
+        />
+
+
+    <item
+        android:id="@+id/action_change_pass"
+        android:title="更換密碼"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_sign_out"
+        android:title="登出"
+        app:showAsAction="never"
+
+        />
+
+    <item
+        android:id="@+id/action_ig"
+        android:icon="@drawable/cm_logo"
+        android:title="Care＆Match IG"
+
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_CM"
+        android:icon="@drawable/cm_logo"
+        android:title="關於Care＆Match"
+        app:showAsAction="never" />
+
+
+</menu>

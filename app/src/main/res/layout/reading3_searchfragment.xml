@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Reading3FragmentSearch">
+
+        <ImageView
+            android:id="@+id/returntodawnstarbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/gosearch"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="搜尋食譜"
+        android:textColorHint="#000"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <SearchView
+                android:id="@+id/recipe_search"
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="108dp"
+                android:layout_marginRight="108dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:queryHint="請輸入搜索內容"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+            </SearchView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id = "@+id/afterSearchPage">
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.TextInputLayout>
+    </android.support.constraint.ConstraintLayout>
